@@ -1,0 +1,77 @@
+---
+title: Hugo Base
+DefaultContentLanguage: en
+MetaDataFormat: yaml
+# build future entries so we can use them calendar style
+buildFuture: true
+Paginate: 300
+baseURL: "https://example.com"
+enableRobotsTXT: true
+googleAnalytics: ""
+languageCode: en-us
+blackfriday:
+  extensionsmask:
+    - noIntraEmphasis
+config: config.yaml
+theme: "hugo-base-layouts"
+mediaTypes:
+  text/netlify:
+    delimiter: ""
+    suffix: ""
+menu:
+  main:
+    -
+      identifier: home
+      name: "Home"
+      url: /
+      weight: 1
+    -
+      identifier: news
+      name: "News"
+      url: /news/
+      weight: 20
+    -
+      identifier: events
+      name: Events
+      url: /events/
+      weight: 40
+    -
+      identifier: about
+      name: About
+      url: /about/
+      weight: 60
+outputFormats:
+  HEADERS:
+    baseName: _headers
+    isPlainText: true
+    mediatype: text/netlify
+    notAlternative: true
+  REDIR:
+    baseName: _redirects
+    isPlainText: true
+    mediatype: text/netlify
+    notAlternative: true
+outputs:
+  home:
+    - HTML
+    - HEADERS
+    - REDIR
+params:
+  description: "Powered by Hugo base"
+  logo: ""
+preserveTaxonomyNames: true
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+social:
+  facebook:
+  twitter:
+  instagram:
+taxonomies:
+  series: series
+  tag: tags
+permalinks:
+  course: /courses/:slug/
+  lesson: /lessons/:slug/
+  

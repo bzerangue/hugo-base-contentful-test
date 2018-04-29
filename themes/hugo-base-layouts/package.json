@@ -1,0 +1,23 @@
+{
+	"name": "hugo-base-theme",
+	"version": "1.0.0",
+	"description": "Base Layouts",
+	"main": "index.js",
+	"scripts": {
+		"autotrack":
+			"autotrack -o static/autotrack.js -p outboundLinkTracker,urlChangeTracker"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/theNewDynamic/hugo-base-layouts.git"
+	},
+	"author": "budparr",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/theNewDynamic/hugo-base-layouts/issues"
+	},
+	"homepage": "https://github.com/theNewDynamic/hugo-base-layouts#readme",
+	"devDependencies": {
+		"autotrack": "^2.4.1"
+	}
+}

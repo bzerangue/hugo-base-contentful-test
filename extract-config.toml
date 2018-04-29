@@ -1,0 +1,15 @@
+encoding = "yaml"
+
+[section]
+[section.category]
+ headless = true
+[section.layout]
+ headless = true
+[section.layouthighlightedcourse]
+ headless = true
+[section.lessoncodesnippets]
+ headless = true
+[section.lessoncopy]
+ headless = true
+[section.lessonimage]
+ headless = true

@@ -1,0 +1,11 @@
+/* Use the site file to define common component classes or to prevent duplicate sets of classes in templates. */
+
+/* BODY */
+.font-primary, .font-brand {
+    @apply .font-serif;
+}
+
+/* --------- Pages -------------- */
+.page-list_default, .page-single_default {
+  @apply .max-w-xl .px-4 .pt-6;
+}

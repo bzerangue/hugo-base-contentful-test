@@ -1,0 +1,8 @@
+{{ with .Params.lessons }}
+	{{ range $lesson := . }}
+		{{ $path := $lesson }}
+		{{ $p := .Site.GetPage "course" "1HR1QvURo4MoSqO0eqmUeO.md" }}
+		{{ $path }}
+		{{ with $p }}{{ .Title }}{{ end }}
+	{{ end }}
+{{ end }}

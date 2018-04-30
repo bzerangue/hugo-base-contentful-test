@@ -1,8 +1,15 @@
 {{ with .Params.lessons }}
+	<ul>
+
 	{{ range $lesson := . }}
-		
-		{{ $p := .Site.GetPage "course" $lesson }}
-		
-		{{ with $p }}{{ .Title }}{{ end }}
+		{{ $lesson }}
+
+
+			{{ with .Site.GetPage "lesson" $lesson }}
+				<li>{{ .Params.slug }}</li>
+			{{ end }}
+	
 	{{ end }}
+	</ul>
+
 {{ end }}

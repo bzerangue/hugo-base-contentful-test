@@ -2,11 +2,9 @@
 	<ul>
 
 	{{ range $lesson := . }}
-		{{ $lesson }}
 
-
-			{{ with .Site.GetPage "lesson" $lesson }}
-				<li>{{ .Params.slug }}</li>
+			{{ with $.Site.GetPage "page" "lesson" $lesson }}
+				<li>{{ .Params.title }}</li>
 			{{ end }}
 	
 	{{ end }}
